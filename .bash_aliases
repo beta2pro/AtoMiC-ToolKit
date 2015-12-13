@@ -48,7 +48,7 @@ alias qbitrestart='sudo /etc/init.d/qbittorrent-nox-daemon restart'
 alias qbitstatus='sudo /etc/init.d/qbittorrent-nox-daemon status'
 
 alias mysqlstart='sudo /etc/init.d/mysql start'
-alias mysqlstart='sudo /etc/init.d/mysql stop'
+alias mysqlstop='sudo /etc/init.d/mysql stop'
 alias mysqlrestart='sudo /etc/init.d/mysql stop && sleep 1 && sudo /etc/init.d/mysql start'
 alias mysqlstatus='sudo /etc/init.d/mysql status'
 
@@ -95,7 +95,7 @@ alias sonarrstatus='sudo /etc/init.d/nzbdrone status'
 alias sabstop='sudo /etc/init.d/sabnzbdplus stop'
 alias sabstart='sudo /etc/init.d/sabnzbdplus start'
 alias sabrestart='sudo /etc/init.d/sabnzbdplus restart'
-alias sabstatus='sudo /etc/init.d/sab status'
+alias sabstatus='sudo /etc/init.d/sabnzbdplus status'
 
 alias headstop='sudo /etc/init.d/headphones stop'
 alias headstart='sudo /etc/init.d/headphones start'
@@ -105,6 +105,7 @@ alias headstatus='sudo /etc/init.d/headphones status'
 alias shellstop='sudo /etc/init.d/shellinabox stop'
 alias shellstart='sudo /etc/init.d/shellinabox start'
 alias shellrestart='sudo /etc/init.d/shellinabox reload'
+alias shellstatus='sudo /etc/init.d/shellinabox status'
 
 alias nginxstart='sudo /etc/nginx/nginx start'
 alias nginxstop='sudo /etc/nginx/nginx stop'
@@ -142,7 +143,7 @@ alias srsync='rsync -avz -e ssh'
 
 alias ll='ls -alh'
 
-alias cp='cp --verbose'
+alias cp='cp -a --verbose'
 alias mv='mv --verbose'
 
 alias dirsize='sudo du -hx --max-depth=1'
@@ -170,8 +171,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 alias free='free -h'
-
-alias wakemini='wakeonlan 00:CF:E0:30:64:0C'
 
 alias testmail='echo test | mail -s "this is a test mail"'
 
