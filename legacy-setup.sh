@@ -17,7 +17,7 @@ source $SCRIPTPATH/inc/commons.sh
 if [ "$EUID" -ne 0 ]
   then 
   echo
-  echo -e $RED'Please run as root using the command: '$ENDCOLOR'sudo bash setup.sh'
+  echo -e $RED'Please run as root using the command: '$ENDCOLOR'sudo bash legacy-setup.sh'
   echo
   exit 0
 fi
